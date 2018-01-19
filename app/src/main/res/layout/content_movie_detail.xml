@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/viewBg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.DetailActivity">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:text="@string/movie_title"
+                android:textSize="20sp"
+                android:padding="@dimen/padding_layout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_rating"
+                android:textSize="20sp"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:padding="@dimen/padding_layout"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_below="@+id/title"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/release_date"
+                android:textSize="20sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:padding="@dimen/padding_layout"
+                android:layout_below="@+id/user_rating"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/plotSynopsis"
+                android:text="@string/plot"
+                android:textSize="20sp"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:padding="@dimen/padding_layout"
+                android:layout_below="@+id/release_date"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/layout_margin_left" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/thumbnailUrl"
+                android:visibility="invisible"
+                app:layout_constraintTop_toBottomOf="@+id/plotSynopsis"
+                app:layout_constraintLeft_toLeftOf="parent"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trailer"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:text="@string/trailer"
+                android:layout_below="@+id/plotSynopsis"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trailer_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"
+                android:layout_below="@+id/trailer"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+<!--</ScrollView>-->
+
+</android.support.v4.widget.NestedScrollView>

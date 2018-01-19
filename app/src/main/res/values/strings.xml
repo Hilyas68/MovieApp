@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="title_activity_movie_detail">Movie Details</string>
+    <string name="plot">Plot Synopsis</string>
+    <string name="rating">User Rating</string>
+    <string name="release">Release Date</string>
+    <string name="pref_sort_order_label">Sort Order</string>
+    <string name="pref_sort_order_key">SortOrder</string>
+    <string name="pref_most_popular">Most Popular</string>
+    <string name="pref_highest_rated">Highest Rated</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="action_settings">Settings</string>
+    <string name="internet">No internet connection, check your device internet connectivity</string>
+    <string name="trailer">Trailer</string>
+    <string name="pref_favorite">Favorite</string>
+</resources>
